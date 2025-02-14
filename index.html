@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi SDN 01 Guci</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Absensi SDN 01 Guci</h1>
+    </header>
+    <main>
+        <form id="absensiForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="kelas">Kelas:</label>
+            <select id="kelas" name="kelas" required>
+                <option value="1">Kelas 1</option>
+                <option value="2">Kelas 2</option>
+                <option value="3">Kelas 3</option>
+                <option value="4">Kelas 4</option>
+                <option value="5">Kelas 5</option>
+                <option value="6">Kelas 6</option>
+            </select>
+            
+            <label for="tanggal">Tanggal:</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div id="daftarAbsensi">
+            <h2>Daftar Absensi</h2>
+            <ul id="listAbsensi"></ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
